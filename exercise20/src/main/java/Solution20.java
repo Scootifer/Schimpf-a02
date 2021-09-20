@@ -17,7 +17,7 @@ class Solution20 {
         final double DUNN_TAX = 0.004;
         final double ILL_TAX = 0.08;
 
-        if(state.toLowerCase().equals("wisconsin")) {
+        if(state.equalsIgnoreCase("wisconsin")) {
 
             if(county.equalsIgnoreCase("eau claire")) {
                 return total * (EAU_CLAIR_TAX + WIS_TAX);
